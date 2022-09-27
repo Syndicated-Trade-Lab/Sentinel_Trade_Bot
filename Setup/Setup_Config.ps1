@@ -67,6 +67,3 @@ if(-not($testpip)){
 else{
     Write-Output "PIP Version $testpip is already installed"
 }
-
-
-
