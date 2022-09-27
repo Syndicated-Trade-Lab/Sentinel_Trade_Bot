@@ -3,6 +3,18 @@ Utilizing ByBit and PyBit development libraries the Sentinel Trade Bot was creat
 
 ## Syndicate Trader
 
+## Setup Configuration
+
+Currently being built out is the setup coinfiguration powershell script. This is where a user will have all of their system dependencies built from if needed
+
+The directory setup contains one script in powershell but may contain more scripts called by a Master run script deployed later in development. 
+
+To test the current deployment 
+Open Powershell as administrator
+`cd ../Sentinel_Trade_Bot/Setup`
+`.\Setup_Config.ps1`
+
+
 ## API key/secret
 On your local machine enter into the directory where you have downloaded the *Syndicate Trader*
 
