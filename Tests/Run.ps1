@@ -1,4 +1,5 @@
-# This script is used for testing the bot and api configuration
+# This script is used for setting up the system package requirements and installing missing libraries
+.\Setup_Config.ps1
 
-#run Key storage and retrieval python program
-python3 .\api_keystore_test.py
+# 
+python3 .\Setup\api_keystore_test.py
