@@ -22,7 +22,7 @@ pause
 $testpython = powershell python --version
 if(-not($testpython)){
     Write-Output "Seems Python is not installed, installing now"
-    Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://www.python.org/ftp/python/3.10.7/python-3.10.7-amd64.exe'))
+    choco install python --version=3.8.0
 }
 else{
     Write-Output "Python Version $testpython is already installed"
