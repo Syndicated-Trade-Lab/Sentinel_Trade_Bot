@@ -1,7 +1,6 @@
-import hashlib
+# Synoposis
+# Reads api key and secret based on string lenght. If the key within the key file meets the required length then the key and secret will be set to global variables for integration with the users Bybit account.
 
- 
- 
 with open('../Trading_Apis/api_vault_storage/key','r') as f:
 
     
@@ -14,43 +13,17 @@ with open('../Trading_Apis/api_vault_storage/key','r') as f:
 
     elif validate == 18:
 
-        #Encodes Key to encoded var
-        key_encode  = key.encode()
-
-        #hashes encoded string var
-        vStringKey  = hashlib.md5(key_encode).hexdigest()
-
-        #stores hash as binary var
-        vBinKey     = bin(int(vStringKey,16))
-
         #opens key file
-        f           = open('../Trading_Apis/api_vault_storage/key','w')
+        f      = open('../Trading_Apis/api_vault_storage/key','r')
+        s     = open('../Trading_Apis/api_vault_storage/secret','r')
 
-        #write binary as a hex to key file
-        hKey = hex(int(vBinKey,2))
-        f.write(hKey)
-
-
-        f           = open('../Trading_Apis/api_vault_storage/key','r')
-        key         = f.read()
-        print(bytes.fromhex(key).decode('utf-8'))
+        key    = f.read()
+        secret = s.read() 
 
         f.close()
+        s.close()
 
     elif validate > 18:
         
-        f           = open('../Trading_Apis/api_vault_storage/key','r')
-        key         = f.read()
-        print(bytes.fromhex(key).decode('utf-8'))
-
+        print("Api key incorrectly formatted. Reference to wiki or readme section API-Key")
         f.close()
-        
-
-
-# print("String : ", end ="")
-# print(string)
-# print(result)
-# print("Hexadecimal equivalent: ",result.hexdigest())
-# apiKey='A5Ejvb6TM8Djhv3Ai5'
-
-# apisecret='nGiKcURCBjPCEQ4vvM2Gghmeby7eaa12yMdk'
