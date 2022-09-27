@@ -16,6 +16,22 @@ if(test-path "C:\ProgramData\chocolatey\choco.exe"){
 
 }
 
-#install pip
+pause 
+#install python3
+
+$testpython = powershell python --version
+if(-not($testpython)){
+    Write-Output "Seems Python is not installed, installing now"
+    Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://www.python.org/ftp/python/3.10.7/python-3.10.7-amd64.exe'))
+}
+else{
+    Write-Output "Python Version $testpython is already installed"
+}
+
+# or
+
+if(test-path "C:\ProgramData\python3*\python.exe"){
+
+}
 
 
