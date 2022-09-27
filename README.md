@@ -10,7 +10,7 @@ The directory setup contains one script in powershell but may contain more scrip
 To test the current deployment 
 Open Powershell as administrator
 `cd ../Sentinel_Trade_Bot/Tests`
-`\Run.ps1`
+`.\Run.ps1`
 
 
 ## API key/secret
