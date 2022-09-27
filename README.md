@@ -1,17 +1,9 @@
 # Sentinel_Trade_Bot
 Utilizing ByBit and PyBit development libraries the Sentinel Trade Bot was created. This is in early satages of development and is currently being worked on by two contributors. 
 
+## Syndicate Trader
 
-# H1
-**Syndicate Trader**
-
-______________________________________________________________________________
-
-
-
-
-## H2
-**API key/secret**
+## API key/secret
 On your local machine enter into the directory where you have downloaded the *Syndicate Trader*
 
 Within this directory the folder`../SyndicatedTrader/api_vault_storage`
@@ -22,4 +14,4 @@ These are the locations where your *ByBit* api key and secret will be stored. Th
 Once input they will be converted to protect the integrity of the key in the chance of a breach of your system. It is suggested that you store a copy of your key/secret in a safe place before you run `SyndicatedTrader` for the first time
 
 
-______________________________________________________________________________
+
