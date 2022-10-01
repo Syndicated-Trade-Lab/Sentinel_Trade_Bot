@@ -1,5 +1,5 @@
 # This script is used for setting up the system package requirements and installing missing libraries
-##.\Setup_Config.ps1
+..\Setup\Setup_Config.ps1
 
 # 
 python ..\Setup\api_keystore_test.py
